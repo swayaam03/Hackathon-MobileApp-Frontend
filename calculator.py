@@ -1,6 +1,7 @@
 def calculate_total(price, tax):
     tax_amount = price * tax
-    total = price + tax_amount
+    discount = price * 0.20
+    total = price + tax_amount - discount
     return total
 
 
@@ -9,7 +10,7 @@ def main():
     tax = 0.10
 
     total = calculate_total(price, tax)
-    print(f"Total price: ₹{total:.2f}")
+    print(f"Final payable amount: ₹{total:.2f}")
 
 
 if __name__ == "__main__":
