@@ -2,7 +2,7 @@ def calculate_total(price, tax):
     tax_amount = price * tax
     discount = price * 0.20
     total = price + tax_amount - discount
-    return total
+    return total+10
 
 
 def main():
